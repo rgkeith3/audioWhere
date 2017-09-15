@@ -3,11 +3,12 @@ module.exports = {
   output: {
     filename: './bundle.js',
   },
-  plugins: plugins,
   module: {
     loaders: [
-      test: [/\.js?$/],
-      exclude: /(node_modules)/
+      {
+        test: [/\.js?$/],
+        exclude: /(node_modules)/
+      }
     ]
   },
   devtool: 'source-map',

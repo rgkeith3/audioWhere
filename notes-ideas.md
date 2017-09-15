@@ -17,29 +17,8 @@ info received:
 - long < 0 eastern - microtonal
 
 
-#### Google Places API
-ex: https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=restaurant&keyword=cruise&key=YOUR_API_KEY
-
-info recieved:
-- num of results
-  - many: populated
-  - few: sparse
-  - zero: uninhabited
-- types of places nearby
-  - political, education, food
-  - [full list](https://developers.google.com/places/supported_types)
 
 #### Data science toolkit
-
-##### coordinates2politics
-ex: http://www.datasciencetoolkit.org/coordinates2politics/37.769456%2c-122.429128
-
-info received:
-- country
-- state
-- county
-- city
-
 ##### coordinates2statistics
 ex: http://www.datasciencetoolkit.org/coordinates2statistics/37.769456%2c-122.429128?statistics=population_density
 
@@ -52,3 +31,14 @@ info received:
 - land cover
  - http://forobs.jrc.ec.europa.eu/products/glc2000/legend/GLC2000_Lccs_110604.pdf
  - index in json refers to lcc label ^
+
+
+### different sounds and where to find them
+
+- high elevation - high pass filter, more in the clouds
+- lower elevation - heavier, lower sounds
+- desert - little rain fall - longer tones, longer reverb, cleaner sound - less chorus
+- rainforest - more rain fall - more frenetic, more noisy
+- hotter - brighter tones, maybe more mid range
+- colder - less mid range
+- pop density - more rhythmic
