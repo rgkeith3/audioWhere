@@ -28,9 +28,12 @@ info received:
 - elevation
 - mean temperature
 - mean precip
-- land cover
- - http://forobs.jrc.ec.europa.eu/products/glc2000/legend/GLC2000_Lccs_110604.pdf
+- land cover http://forobs.jrc.ec.europa.eu/products/glc2000/legend/GLC2000_Lccs_110604.pdf
  - index in json refers to lcc label ^
+
+#### OpenWeatherMap
+
+https://openweathermap.org/current
 
 
 ### different sounds and where to find them

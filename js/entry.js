@@ -1,6 +1,8 @@
 import fetchJsonp from 'fetch-jsonp'
 import Synth from './synth'
 
+const synth = new Synth()
+
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(pos => {
     document.querySelector('#latitude').value = pos.coords.latitude;
@@ -14,12 +16,11 @@ const fetchLocationData = () => {
 
   fetchJsonp(`http://www.datasciencetoolkit.org/coordinates2statistics/${lat},${lng}?statistics=elevation,land_cover,mean_temperature,population_density,precipitation`)
     .then(res => res.json())
-    .then(data => {
-      const synth = new Synth(data[0])
-      synth.play()})
+    .then(data => synth.parse(data[0]))
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+
 
   document.querySelector('#submit').addEventListener('click', fetchLocationData)
 })
